@@ -34,3 +34,46 @@ Cette application a été développé avec :
 - LOMBOK
 - Spring DATA JPA
 L'application a été développée suivant une architecture microservice
+
+
+
+
+Installation:
+
+Install Tomcat(9).
+
+Make a git clone of the following repositories:
+
+	- Lib7, API (https://github.com/GunmProg/Lib7);
+	- library7WebClient, web application (https://github/GunmProg/library7WebClient);
+	- SpringBatch, batch (https://github/GunmProg/SpringBatch).
+	
+Open these microservices in Intellij Idea.
+
+
+In the Lib7 project, go to the application.properties file, in line "spring.jpa.hibernate.ddl-auto =", put configuration mode on "create".
+
+Create a database via an SQL editor (I used MySQLWorkbench), use the datas given in the Dump folder, then go in the application.properties file: "spring.datasource.url =" 
+and enter your database's link "spring.datasource.username =" your username and "spring.datasource.password =" your password.
+
+In the terminal, enter the following commands: 
+
+ mvn clean package spring-boot: repackage, then java -jar target\Lib7-0.0.1-SNAPSHOT.jar
+ 
+To see what the logged-in user can do, here are the necessary identifiers (username and password) when connecting:
+
+
+Launch:
+
+First run Lib7, then library7WebClient and finally SpringBatch.
+
+You can access the web application at port localhost:/8080 from your browser if you have not changed the "server.port.properties" in application.properties'file.
+
+You will find each microservices's properties configuration in:
+ 
+	src/main/resources/application.properties
+	
+
+Author:
+
+Emilie Balsen - as part of my training as a java application developer at OpenClassrooms.
