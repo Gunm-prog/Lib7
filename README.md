@@ -17,27 +17,30 @@ This software for automated processing will send reminder emails to users who ha
 
 
 
-The web API
+The web API:
+
 The website as well as the batch will communicate with this software in REST in order to know the information related to the Database.
 
-Les contraintes fonctionnelles
-- Application web avec un framework MVC.
-- API web en microservices REST (Les clients (site web, batch) communiqueront avec cette API web) 
-	-> factorisation de la logique métier.
-- Packaging avec Maven.
-Développement
-Cette application a été développé avec :
-- Intellij IDEA
+Functional constraints:
+- Web Application with an MVC framework.
+
+- Web API in REST microservices (clients (web site, batch) will communicate with this web API) 
+- Maven packaging.
+
+Development:
+This app was developped with:
+- Intellij IDEA Community Edition (2020 1.4)
 - Java 8 (version 1.8u241)
 - Tomcat 9
 - MySQL Workbench(version 8.0 C.E.)
-- le framework Spring (version 5.2.1)
-- Spring boot
-- Proxy Feign
+- Spring (version 5.2.1)
+- Spring Boot 
+- Feign Proxy
 - LOMBOK
-- Spring DATA JPA
-L'application a été développée suivant une architecture microservice
+- Spring DATA JPA Hibernate
 
+
+The application was developed according to a microservice architecture.
 
 
 
