@@ -1,21 +1,24 @@
 # Lib7
-Projet réalisé dans le cadre de la formation Développeur d'application JAVA OpenClassrooms.
-Création d'un site de gestion de bibliothèque de la ville.
-Contexte :
-Vous travaillez au sein de la Direction du Système d’Information (DSI) de la mairie d’une grande ville, sous la direction de Patricia, la responsable du service. La DSI est en charge de tous les traitements numériques pour la mairie et les structures qui lui sont rattachées, comme la gestion du site web de la ville par exemple. À ce titre, Patricia est contactée par le service culturel de la ville qui souhaite moderniser la gestion de ses bibliothèques. John, architecte logiciel, sera chargé de la validation technique du projet.
+Project carried out as part of the JAVA OpenClassrooms application developer training course.
+Creation of a city library management site.
+Context :
+You work in the Information System Department (ISD) of the town hall of a large city, under the direction of Patricia, the head of the service. The IT department is in charge of all digital processing for the town hall and the structures attached to it, such as managing the town's website for example. As such, Patricia was contacted by the city's cultural service, which wanted to modernize the management of its libraries. John, software architect, will be responsible for the technical validation of the project.
 
-Le projet :
-Le site web
-Le but est de permettre aux usagers de suivre les prêts de leur ouvrages à travers une interface web:
 
-Rechercher des ouvrages et voir le nombre d'exemplaire disponible.
-Consulter leurs prêts en cours.
-Le prêt d'un ouvrage est prolongeable une seule fois. La prolongation ajoute une nouvelle période de prêt(4 semaines) à la période initiale.
-Un batch
-Ce logiciel pour le traitement automatisé permettra d'envoyer des mails de relance aux usagers n'ayant pas rendu les livres en fin de période de prêt. L'envoi sera automatique à la fréquence d'un par jour.
+The project :
 
-L'API web
-Le site web ainsi que le batch communiqueront avec ce logiciel en REST afin de connaitre les informations liées à la Base de donnée.
+The website will allow users to follow their book loans through the web interface:
+
+Search for books and see the number of available copies.
+View their current loans.
+The loan of a book can be extended only once. The extension adds a new loan period (4 weeks) to the initial period.
+A batch:
+This software for automated processing will send reminder emails to users who have not returned the books at the end of the loan period. The sending will be automatic at the frequency of one per day.
+
+
+
+The web API
+The website as well as the batch will communicate with this software in REST in order to know the information related to the Database.
 
 Les contraintes fonctionnelles
 - Application web avec un framework MVC.
@@ -60,8 +63,10 @@ In the terminal, enter the following commands:
 
  mvn clean package spring-boot: repackage, then java -jar target\Lib7-0.0.1-SNAPSHOT.jar
  
-To see what the logged-in user can do, here are the necessary identifiers (username and password) when connecting:
-
+To see what the logged-in user can do (see their book loans' details and book loans' list in their dashboard), here are the necessary identifiers (username and password) when connecting:
+username = lily@hotmail.com     password = password
+username = neo@hotmail.com      password = password
+username = chris@hotmail.com    password = password
 
 Launch:
 
