@@ -67,9 +67,14 @@ In the terminal, enter the following commands:
  mvn clean package spring-boot: repackage, then java -jar target\Lib7-0.0.1-SNAPSHOT.jar
  
 To see what the logged-in user can do (see their book loans' details and book loans' list in their dashboard), here are the necessary identifiers (username and password) when connecting:
-username = lily@hotmail.com     password = password
-username = neo@hotmail.com      password = password
-username = chris@hotmail.com    password = password
+
+username = lily@hotmail.com password = password
+
+username = neo@hotmail.com password = Password31
+
+username = tom@hotmail.com password = Password32
+
+You can also register a new user
 
 Launch:
 
