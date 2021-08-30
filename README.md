@@ -51,8 +51,8 @@ Install Tomcat(9).
 Make a git clone of the following repositories:
 
 	- Lib7, API (https://github.com/Gunm-Prog/Lib7);
-	- library7WebClient, web application (https://github/Gunm-Prog/library7WebClient);
-	- SpringBatch, batch (https://github/Gunm-Prog/SpringBatch).
+	- library7WebClient, web application (https://github.com/Gunm-Prog/library7WebClient);
+	- SpringBatch, batch (https://github.com/Gunm-Prog/SpringBatch).
 	
 Open these microservices in Intellij Idea.
 
